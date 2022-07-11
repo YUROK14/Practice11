@@ -53,8 +53,18 @@ namespace Practice11
             this.Hide();
 
         }
-        
 
+        //добавить таблицу
+        //public void AddTable(string nameTable)
+        //{
+        //    string addtable = "CREATE TABLE IF NOT EXISTS qwerty" + nameTable +
+        //        " (id integer NOT NULL GENERATED ALWAYS AS IDENTITY (INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ), " +
+        //        "1 text NULL, " +
+        //        "2 text NULL, " +
+        //        "3 text NULL, " +)";
+
+        //    NpgsqlCommand cmd = new NpgsqlCommand(addtable, db.sqlConnectionPG);
+        //    cmd.ExecuteNonQuery();
 
 
     }
