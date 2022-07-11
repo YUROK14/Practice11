@@ -16,16 +16,6 @@ namespace Practice11
     {
         private SqlConnection sqlConnection = null;
 
-        int questions_count;
-        int correct_answers;
-        int wrong_answers;
-        int correct_answers_number;
-        int selected_response;
-        int counts;
-
-
-
-
 
 
         public Form1()

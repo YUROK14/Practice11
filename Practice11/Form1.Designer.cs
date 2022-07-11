@@ -31,13 +31,14 @@ namespace Practice11
         {
             this.components = new System.ComponentModel.Container();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.database1DataSet = new Practice11.Database1DataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new Practice11.Database1DataSet();
             this.tableTableAdapter = new Practice11.Database1DataSetTableAdapters.TableTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -50,15 +51,15 @@ namespace Practice11
             this.listBox1.Size = new System.Drawing.Size(264, 316);
             this.listBox1.TabIndex = 2;
             // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tableBindingSource
             // 
             this.tableBindingSource.DataMember = "Table";
             this.tableBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableTableAdapter
             // 
@@ -82,21 +83,30 @@ namespace Practice11
             this.button2.TabIndex = 4;
             this.button2.Text = "Удалить тест";
             this.button2.UseVisualStyleBackColor = true;
-            
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(36, 142);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 39);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Загрузить тест";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +118,7 @@ namespace Practice11
         private Database1DataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
