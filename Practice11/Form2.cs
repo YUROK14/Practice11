@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Practice11
 {
@@ -26,7 +28,7 @@ namespace Practice11
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
