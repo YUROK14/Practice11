@@ -46,9 +46,11 @@ namespace Practice11
             }
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 newfrm = new Form2();
+
             newfrm.Show();
             this.Hide();
 
