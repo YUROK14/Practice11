@@ -7,26 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Practice11
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
-            Form1 newfrm1 = new Form1();
-            newfrm1.Show();
-            this.Hide();
+            
+
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1 newfrm = new Form1();
+            newfrm.Show();
+            this.Hide();
         }
     }
 }

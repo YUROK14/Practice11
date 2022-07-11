@@ -35,8 +35,6 @@ namespace Practice11
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Table' table. You can move, or remove it, as needed.
-            this.tableTableAdapter.Fill(this.database1DataSet.Table);
             sqlConnection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["DB"].ConnectionString);
             sqlConnection.Open();
             if (sqlConnection.State == ConnectionState.Open)
